@@ -1,0 +1,661 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:-apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "SF Pro Text",
+    sans-serif;
+
+    background:#efefef;
+
+    color:#1d1d1f;
+
+}
+
+/* ===========================================
+   HEADER
+=========================================== */
+
+.header{
+
+    height:120px;
+
+    background:linear-gradient(
+        180deg,
+        #d7a40d 0%,
+        #efc020 100%
+    );
+
+    position:relative;
+
+}
+
+.back-button{
+
+    position:absolute;
+
+    left:18px;
+
+    top:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:500;
+
+}
+
+.back-icon{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+.government-logo{
+
+    position:absolute;
+
+    right:18px;
+
+    top:18px;
+
+    width:70px;
+
+}
+
+/* ===========================================
+   TITLE
+=========================================== */
+
+.title{
+
+    padding:18px 22px 10px;
+
+    background:#efefef;
+
+}
+
+.title h1{
+
+    font-size:31px;
+
+    font-weight:500;
+
+    color:#111;
+
+}
+
+/* ===========================================
+   MAIN CARD
+=========================================== */
+
+.licence-card{
+
+    width:calc(100% - 24px);
+
+    margin:0 auto 100px;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    box-shadow:
+
+    0 3px 12px rgba(0,0,0,.07);
+
+}
+
+/* ===========================================
+   WATERMARK
+=========================================== */
+
+.watermark{
+
+    position:absolute;
+
+    right:-35px;
+
+    top:130px;
+
+    width:230px;
+
+    opacity:.06;
+
+    pointer-events:none;
+
+}
+
+/* ===========================================
+   PHOTO SECTION
+=========================================== */
+
+.identity{
+
+    display:flex;
+
+    gap:18px;
+
+    padding:22px;
+
+}
+
+.photo{
+
+    width:108px;
+
+    height:135px;
+
+    border-radius:14px;
+
+    object-fit:cover;
+
+    background:#ddd;
+
+    flex-shrink:0;
+
+}
+
+.identity-details{
+
+    flex:1;
+
+}
+
+.identity-details h2{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    letter-spacing:.4px;
+
+}
+
+.identity-details h3{
+
+    margin-top:2px;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    letter-spacing:.4px;
+
+    margin-bottom:18px;
+
+}
+
+/* ===========================================
+   DETAIL BLOCKS
+=========================================== */
+
+.detail{
+
+    margin-bottom:18px;
+
+}
+
+.label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    color:#707070;
+
+    font-size:13px;
+
+    margin-bottom:5px;
+
+}
+
+.value{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.info-icon{
+
+    width:14px;
+
+    height:14px;
+
+}
+
+.copy-icon{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+/* ===========================================
+   REFRESH
+=========================================== */
+
+.refresh{
+
+    padding:0 22px 18px;
+
+}
+
+.refresh p{
+
+    color:#666;
+
+    font-size:13px;
+
+    margin-bottom:4px;
+
+}
+
+.refresh strong{
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+/* ===========================================
+   DIVIDERS
+=========================================== */
+
+hr{
+
+    border:none;
+
+    border-top:1px solid #ededed;
+
+}
+
+
+.row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    padding:18px 22px;
+
+}
+
+.row-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    min-width:115px;
+
+    color:#6c6c6c;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+.row-value{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#222;
+
+    text-align:right;
+
+}
+
+.address-row{
+
+    align-items:flex-start;
+
+}
+
+.address{
+
+    line-height:1.55;
+
+    text-align:right;
+
+}
+
+.authority-row{
+
+    align-items:flex-start;
+
+    padding-bottom:24px;
+
+}
+
+.authority{
+
+    line-height:1.55;
+
+    text-align:right;
+
+}
+
+/* ===========================================
+   STATUS BADGES
+=========================================== */
+
+.current{
+
+    color:#15803d;
+
+    font-weight:700;
+
+}
+
+.green-dot{
+
+    width:10px;
+
+    height:10px;
+
+    background:#16a34a;
+
+    border-radius:50%;
+
+}
+
+.under18{
+
+    color:#b91c1c;
+
+    font-weight:700;
+
+}
+
+.red-circle{
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+    background:#dc2626;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+/* ===========================================
+   SIGNATURE
+=========================================== */
+
+.signature-row{
+
+    align-items:center;
+
+}
+
+.signature{
+
+    width:120px;
+
+    height:auto;
+
+    object-fit:contain;
+
+}
+
+/* ===========================================
+   SHARE BUTTON
+=========================================== */
+
+.share-button{
+
+    width:calc(100% - 44px);
+
+    margin:26px 22px 28px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:24px;
+
+    background:#f1f1f1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:#4b5563;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.share-button:hover{
+
+    background:#e8e8e8;
+
+}
+
+.share-icon{
+
+    width:18px;
+
+}
+
+/* ===========================================
+   BOTTOM NAVIGATION
+=========================================== */
+
+.bottom-nav{
+
+    position:fixed;
+
+    left:0;
+
+    bottom:0;
+
+    width:100%;
+
+    height:78px;
+
+    background:#fff;
+
+    border-top:1px solid #dddddd;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    z-index:1000;
+
+}
+
+.bottom-nav button{
+
+    background:none;
+
+    border:none;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:5px;
+
+    color:#6b7280;
+
+    font-size:11px;
+
+    cursor:pointer;
+
+}
+
+.bottom-nav button img{
+
+    width:24px;
+
+    height:24px;
+
+}
+
+.bottom-nav button.active{
+
+    color:#8b1d3c;
+
+    font-weight:700;
+
+}
+
+/* ===========================================
+   SCROLLBAR
+=========================================== */
+
+body::-webkit-scrollbar{
+
+    width:0;
+
+}
+
+body{
+
+    scrollbar-width:none;
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media (max-width:430px){
+
+    .photo{
+
+        width:96px;
+
+        height:120px;
+
+    }
+
+    .identity-details h2,
+    .identity-details h3{
+
+        font-size:20px;
+
+    }
+
+    .value{
+
+        font-size:17px;
+
+    }
+
+    .row{
+
+        padding:16px 20px;
+
+    }
+
+    .title h1{
+
+        font-size:29px;
+
+    }
+
+}
+
+/* ===========================================
+   SAFE AREA (iPhone)
+=========================================== */
+
+@supports (padding: max(0px)){
+
+    .bottom-nav{
+
+        padding-bottom:max(0px, env(safe-area-inset-bottom));
+
+        height:calc(78px + env(safe-area-inset-bottom));
+
+    }
+
+    .licence-card{
+
+        margin-bottom:120px;
+
+    }
+
+}
